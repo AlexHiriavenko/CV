@@ -41,6 +41,30 @@ Eng - Intermediate (B1)
 
 ---
 
+### Projects:
+
+##### Social Network. React App with server & database
+
+[sourse](https://github.com/AlexHiriavenko/social-network); website: in progress;
+
+##### Privilege Handmade. React app. Online Store.
+
+[sourse](https://github.com/AlexHiriavenko/onlineStore-HandMade); [website](https://monumental-buttercream-9eb92c.netlify.app/)
+
+##### Medical Portal.
+
+[sourse](https://github.com/AlexHiriavenko/MedicalPortal-JS-Bstrap-Auth); [website](https://starlit-puppy-06210c.netlify.app/)
+
+###### for login check [link](https://github.com/AlexHiriavenko/MedicalPortal-JS-Bstrap-Auth/blob/main/How.Run.Project.md)
+
+##### Forcio. Responsive design
+
+[sourse](https://github.com/AlexHiriavenko/Forkio-responsive-gulp); [website](https://alexhiriavenko.github.io/Forkio-responsive-gulp/)
+
+##### Ham - landing page
+
+[sourse](https://gitlab.com/ma_rch/step-project-ham); [website](https://courageous-donut-e536e9.netlify.app/)
+
 ### EXPERIENCE
 
 ##### FRONT END DEVELOPER INTERNSHIP
