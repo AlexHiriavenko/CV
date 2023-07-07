@@ -1,7 +1,8 @@
 .avatar {
-    width: max-content;
+    width: 200px;
+    height: 200px;
     height: calc(max-content + 100px);
-    margin: 14px auto 0;
+    margin: 0 auto;
 }
 
 .avatar__img {
@@ -25,7 +26,6 @@
 .avatar__name {
     position: absolute;
     right: -32%;
-
 }
 
 .avatar:hover .avatar__name {
@@ -44,7 +44,7 @@
     margin-bottom: 30px;
 }
 
-.section-title {
+aside .section-title {
     display: flex;
     justify-content: space-between;
     font-size: 20px;
@@ -94,7 +94,7 @@ a[href*="tel:"] {
 }
 
 .skills__item-brackets {
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .edu__item {
@@ -126,4 +126,13 @@ a[href*="tel:"] {
     list-style: disc;
     padding-left: 16px;
     text-indent: 5px;
+}
+
+.sidebar-sert {
+    margin-top: 24px;
+}
+
+.cert__link {
+    display: block;
+    margin-top: 14px;
 }

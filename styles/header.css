@@ -1,12 +1,14 @@
 header {
     display: flex;
+    width: 100%;
     align-items: center;
     padding: 20px;
-    background-image: linear-gradient(#dd03e4, #5611ec);
-    min-height: 10%;
-    border-bottom: 1px solid white;
+    background-image: linear-gradient(to right, #391587 17%, #79047d 49%);
+    min-height: 8%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 nav {
@@ -24,4 +26,13 @@ nav {
     align-items: center;
     color: white;
     height: 100%;
+}
+
+.nav-link {
+    display: inline-block;
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: lawngreen;
 }
