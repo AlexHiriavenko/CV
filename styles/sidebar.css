@@ -45,6 +45,10 @@
     margin-bottom: 30px;
 }
 
+aside section {
+    margin-bottom: 40px;
+}
+
 aside .section-title {
     display: flex;
     justify-content: space-between;
