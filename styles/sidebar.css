@@ -16,6 +16,7 @@
     padding-bottom: 5px;
     text-align: center;
     overflow: hidden;
+    color: lawngreen;
 }
 
 .avatar__greetings {
@@ -29,13 +30,13 @@
 }
 
 .avatar:hover .avatar__name {
-    left: 67%;
+    left: 60%;
     transform: translate(-50%);
     transition-duration: 1s;
 }
 
 .avatar:hover .avatar__greetings {
-    left: 35%;
+    left: 28%;
     transform: translate(-50%);
     transition-duration: 1s;
 }
@@ -66,6 +67,8 @@ aside .section-title {
 .contacts__list {
     margin-bottom: 30px;
 }
+
+
 
 .contacts__link {
     width: 95%;
@@ -122,9 +125,8 @@ a[href*="tel:"] {
 }
 
 .edu__sublist {
-    padding: 0;
     list-style: disc;
-    padding-left: 16px;
+    /* padding-left: 16px; */
     text-indent: 5px;
 }
 
@@ -135,4 +137,91 @@ a[href*="tel:"] {
 .cert__link {
     display: block;
     margin-top: 14px;
+}
+
+.code {
+    position: relative;
+}
+
+code {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 80px;
+}
+
+.code_wrap {
+    position: absolute;
+    top: 28%;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    color: green;
+    background-color: #f5f5f5;
+    padding: 10px;
+    display: block;
+    background-color: lightgrey;
+    border-radius: 12px;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    transition-duration: 1s;
+}
+
+.code__title {
+    margin-top: 10px;
+}
+
+.code__text {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.code__text span {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.code__btn {
+    background-color: none;
+    padding: 0;
+    border: none;
+}
+
+.code__click {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+}
+
+.code__btn-wrap {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.code-onClick {
+    opacity: 1;
+    width: 460px;
+    height: 100px;
+}
+
+.code__span {
+    display: block;
+    width: 460px;
+    height: 100%;
+}
+
+.close {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    top: 8%;
+    right: 3%;
+    cursor: pointer;
+    color: rgb(101, 101, 101);
+}
+
+.close:hover {
+    color: #79047d;
 }

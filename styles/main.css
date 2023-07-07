@@ -53,7 +53,7 @@ main .section-title {
 }
 
 .projects__item-description-text {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.2;
     text-align: justify;
 }
@@ -63,11 +63,16 @@ main .section-title {
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 1px;
-    text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
+    text-shadow: 1px 1px 2px black, 0 0 0.1em white, 0 0 0.1em white;
+    transition-duration: .5s;
 }
 
 .projects__item-link:hover {
     color: lightgreen;
+}
+
+.projects__item-link--hover:hover {
+    filter: brightness(.7);
 }
 
 .projects__item-link:first-of-type {
