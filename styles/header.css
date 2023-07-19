@@ -33,13 +33,30 @@ nav {
 }
 
 .nav-link {
+    font-size: 16px;
     display: inline-block;
+    position: relative;
     width: 100%;
     transition-duration: .5s;
 }
 
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: lightgreen;
+    transition-duration: 0.7s;
+}
+
 .nav-link:hover {
     color: lawngreen;
+}
+
+.nav-link:hover::after {
+    width: 100%;
 }
 
 .burger-btn {
@@ -50,36 +67,44 @@ nav {
     color: white;
 }
 
-@media (max-width: 500px) {
+#pdfLink {
+    display: none;
+}
 
-    header {
-        position: relative;
+@media (max-width: 640px) {
+    nav {
+        overflow: hidden;
     }
 
     .header__avatar {
         display: block;
+        padding-top: 4px;
     }
 
     .nav-list {
+        padding: 0 !important;
         background-color: #79047d;
         position: absolute;
-        width: max-content;
-        height: auto;
+        width: 0;
+        height: 0;
         flex-direction: column;
         padding: 20px;
         gap: 14px;
         top: 100%;
         right: 2%;
         z-index: 2;
-        width: 0;
+        width: 120px;
         height: 0;
-        opacity: 0;
+        overflow: hidden;
     }
 
     .nav-list--active {
-        width: max-content;
-        height: auto;
-        opacity: 1;
+        padding: 20px !important;
+        width: 120px;
+        height: 240px;
+        transition-duration: 0.7s;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
     }
 
     .burger-btn {
