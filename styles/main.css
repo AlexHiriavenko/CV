@@ -62,6 +62,12 @@ main .section-title {
     text-align: justify;
 }
 
+.projects__item-description-text span {
+    text-decoration: underline;
+    font-style: italic;
+    color: lightgray;
+}
+
 .projects__item-link {
     color: lightgray;
     font-size: 14px;
