@@ -1,5 +1,6 @@
 main {
     position: relative;
+    scroll-margin-top: 60px;
 }
 
 .cv-title {
