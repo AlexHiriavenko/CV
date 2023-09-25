@@ -63,11 +63,10 @@ main .section-title {
     text-align: justify;
 }
 
-.projects__item-description-text span {
-    text-decoration: underline;
+/* .projects__item-description-text span {
     font-style: italic;
     color: lightgray;
-}
+} */
 
 .projects__item-link {
     color: lightgray;
