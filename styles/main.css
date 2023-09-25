@@ -162,3 +162,20 @@ main .section-title {
     font-weight: 700;
     padding-left: 6px;
 }
+
+.modal {
+    position: fixed;
+    top: 0;
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal img {
+    max-height: 90vh;
+}
