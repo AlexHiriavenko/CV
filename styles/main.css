@@ -163,19 +163,47 @@ main .section-title {
     padding-left: 6px;
 }
 
+.img-cert {
+    cursor: zoom-in;
+}
+
 .modal {
     position: fixed;
     top: 0;
-    display: flex;
     display: none;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    min-width: 100vw;
     height: 100vh;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: auto;
 }
 
-.modal img {
+.modal-cert {
+    max-width: 90vw;
     max-height: 90vh;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.btn-close-modal {
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    z-index: 3;
+    padding-block: 10px;
+    padding-inline: 12px;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@media (min-width: 480px) {
+    .btn-close-modal {
+        right: 36px;
+    }
 }
