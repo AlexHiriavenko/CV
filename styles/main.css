@@ -1,3 +1,8 @@
+main {
+    position: relative;
+    scroll-margin-top: 60px;
+}
+
 .cv-title {
     text-align: center;
     font-size: 42px;
@@ -22,8 +27,8 @@ main .section-title {
 }
 
 .about-text {
-    font-size: 13px;
-    line-height: 1.2;
+    font-size: 14px;
+    line-height: 1.4;
     text-align: justify;
 }
 
@@ -54,9 +59,14 @@ main .section-title {
 
 .projects__item-description-text {
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1.4;
     text-align: justify;
 }
+
+/* .projects__item-description-text span {
+    font-style: italic;
+    color: lightgray;
+} */
 
 .projects__item-link {
     color: lightgray;
@@ -104,6 +114,7 @@ main .section-title {
 }
 
 .exp__text {
+    line-height: 1.4;
     text-align: justify;
 }
 
@@ -115,4 +126,84 @@ main .section-title {
     display: flex;
     gap: 12px;
     align-items: center;
+}
+
+.load-pdf {
+    position: absolute;
+    display: block;
+    width: max-content;
+    top: 24px;
+    left: 20px;
+    background-color: #2d0a79;
+    color: white;
+    font-weight: 700;
+    border-radius: 15px;
+    box-shadow: 0 0 0 white, 0 0 0.7em white;
+}
+
+.load-pdf button {
+    background-color: inherit;
+    color: inherit;
+    padding: 7px 12px 7px 6px;
+    line-height: 1.4;
+    font-size: 18px;
+    width: 120px;
+    border-radius: 15px;
+    text-align: center;
+    outline-offset: unset;
+}
+
+.load-pdf .arrow {
+    font-weight: 700;
+    padding: 0 4px;
+}
+
+.load-pdf .pdf {
+    font-weight: 700;
+    padding-left: 6px;
+}
+
+.img-cert {
+    cursor: zoom-in;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: auto;
+}
+
+.modal-cert {
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.btn-close-modal {
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    z-index: 3;
+    padding-block: 10px;
+    padding-inline: 12px;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@media (min-width: 480px) {
+    .btn-close-modal {
+        right: 36px;
+    }
 }
