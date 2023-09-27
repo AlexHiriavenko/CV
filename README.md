@@ -1,4 +1,4 @@
-# rsschool-cv
+# My CV
 
 ## url website:
 
