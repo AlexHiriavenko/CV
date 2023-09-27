@@ -1,3 +1,5 @@
-# rsschool-cv
+# MY CV
 
-https://alexhiriavenko.github.io/rsschool-cv/
+## url website:
+
+https://alexhiriavenko.github.io/CV/
