@@ -3,6 +3,7 @@ const btnClose = document.querySelector(".close");
 const btnBurger = document.querySelector(".burger-btn");
 const linkCert = document.querySelector(".cert");
 const headerLinks = document.querySelectorAll(".nav-link");
+const nav = document.querySelector("nav");
 
 btnCode.addEventListener("click", onBtnCodeClick);
 
@@ -21,10 +22,20 @@ btnClose.addEventListener("click", () => {
 btnBurger.addEventListener("click", handleBurger);
 
 function handleBurger() {
-    const headerMenu = document.querySelector(".nav-list");
-    headerMenu.matches(".nav-list--active")
-        ? headerMenu.classList.remove("nav-list--active")
-        : headerMenu.classList.add("nav-list--active");
+    if (nav.matches(".active")) {
+        nav.classList.remove("active");
+        document.body.removeEventListener("click", toggleBurger);
+    } else {
+        nav.classList.add("active");
+        document.body.addEventListener("click", toggleBurger);
+    }
 }
 
 headerLinks.forEach((link) => link.addEventListener("click", handleBurger));
+
+function toggleBurger(e) {
+    if (!e.target.closest(".burger-btn") && !e.target.closest("nav")) {
+        nav.classList.remove("active");
+        document.body.removeEventListener("click", toggleBurger);
+    }
+}
