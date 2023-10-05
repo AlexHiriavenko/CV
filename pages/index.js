@@ -1,13 +1,17 @@
 let btnBurger = document.querySelector(".burger-btn");
 const linkCert = document.querySelector(".cert");
+const nav = document.querySelector("nav");
 
 btnBurger.addEventListener("click", handleBurger);
 
 function handleBurger() {
-    const headerMenu = document.querySelector(".nav-list");
-    headerMenu.matches(".nav-list--active")
-        ? headerMenu.classList.remove("nav-list--active")
-        : headerMenu.classList.add("nav-list--active");
+    if (nav.matches(".active")) {
+        nav.classList.remove("active");
+        document.body.removeEventListener("click", toggleBurger);
+    } else {
+        nav.classList.add("active");
+        document.body.addEventListener("click", toggleBurger);
+    }
 }
 
 const modal = document.querySelector(".modal");
@@ -43,4 +47,11 @@ function removeScroll() {
 
 function enableScroll() {
     document.body.style.overflow = "auto";
+}
+
+function toggleBurger(e) {
+    if (!e.target.closest(".burger-btn") && !e.target.closest("nav")) {
+        nav.classList.remove("active");
+        document.body.removeEventListener("click", toggleBurger);
+    }
 }
