@@ -102,6 +102,7 @@ a[href*="tel:"] {
 .edu__item {
     position: relative;
     padding-left: 28px;
+    margin-bottom: 16px;
 }
 
 .edu__item::before {
@@ -121,11 +122,16 @@ a[href*="tel:"] {
 .edu__text {
     margin-top: 5px;
     margin-bottom: 10px;
+    line-height: 1.2;
 }
 
 .edu__sublist {
     list-style: disc;
     text-indent: 5px;
+}
+
+.edu__sub-item {
+    margin-top: 12px;
 }
 
 .cert__link {
